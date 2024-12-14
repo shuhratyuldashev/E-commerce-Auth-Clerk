@@ -1,0 +1,22 @@
+.slider_slide {
+  flex-direction: column;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.slide_1 {
+  background-image: url(/assets/imgs_swiper/swiper_slide_1.png);
+}
+.slide_2 {
+  background-image: url(/assets/imgs_swiper/swiper_slide_2.png);
+}
+.slide_3 {
+  background-image: url(/assets/imgs_swiper/swiper_slide_3.png);
+}

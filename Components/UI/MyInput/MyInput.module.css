@@ -1,0 +1,25 @@
+.input {
+  padding: 15px 20px;
+  border: 2px solid var(--gray-color);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 16px;
+  outline: none;
+  transition:
+    border-color 0.3s,
+    box-shadow 0.3s;
+}
+
+.input:focus {
+  border-color: var(--dark-color);
+  box-shadow: 0 0 4px var(--gray-color);
+}
+
+.input_inline{
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}.input_full {
+  width: 100%;
+}

@@ -1,0 +1,79 @@
+.button_black {
+  --backround: var(--black-color);
+  --color: white;
+}
+.button_white {
+  --backround: white;
+  --color: var(--black-color);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  background: none;
+  border-radius: 16px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 250ms;
+  border: 3px solid var(--backround);
+}
+
+.button_inline {
+  font-family: "Roboto";
+  box-sizing: border-box;
+  color: var(--backround);
+}
+.button_inline:hover {
+  scale: 1.1;
+  background-color: var(--backround);
+  color: var(--color);
+}
+.button_inline:active {
+  background: none;
+  color: var(--backround);
+}
+
+.button_outline {
+  font-family: "Roboto";
+  background-color: var(--backround);
+  color: var(--color);
+}
+.button_outline:hover {
+  scale: 1.1;
+  background: none;
+  color: var(--backround);
+}
+.button_outline:active {
+  background-color: var(--backround);
+  color: var(--color);
+}
+
+.button_full {
+  width: 100%;
+  border-radius: 0 0 16px 16px;
+  color: var(--color);
+  background-color: var(--backround);
+}
+.button_full:hover {
+  background: none;
+  color: var(--backround);
+}
+.button_full:active {
+  background-color: var(--backround);
+  color: var(--color);
+}
+
+.button_width_full {
+  width: 100%;
+}
+.button_width_half {
+  width: 50%;
+}
+.button_width_inline {
+  padding: 10px 15px;
+}
