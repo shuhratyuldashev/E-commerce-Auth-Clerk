@@ -15,6 +15,7 @@ interface MyProductCardTypes {
   productImg: string;
   productCount: number;
   linkId: number;
+  idCategory: number;
   productCard?: boolean;
   cartCard?: boolean;
 }
@@ -26,7 +27,8 @@ const MyProductCard: FC<MyProductCardTypes> = ({
   productPrice,
   productImg,
   productCount,
-  linkId
+  linkId,
+  idCategory
 }) => {
   const [count, setCount] = useState(productCount || 1);
 
@@ -75,7 +77,7 @@ const MyProductCard: FC<MyProductCardTypes> = ({
       {productCard && (
         <div className={styless.product_card_container}>
           <div className={styless.product_card}>
-            <Link href={`/product/${linkId}`} className={styless.main_product_card} style={backgroundStyle}>
+            <Link href={`/product/${idCategory}/${linkId}`} className={styless.main_product_card} style={backgroundStyle}>
               <MyText
                 weight="medium"
                 bg="white"

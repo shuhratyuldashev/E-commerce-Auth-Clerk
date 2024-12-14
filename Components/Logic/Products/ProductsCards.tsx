@@ -24,7 +24,7 @@ const ProductsCards = () => {
     const filteredProducts = selectedCategory === null 
         ? allProducts 
         : [allProducts[selectedCategory]];
-
+        
     return (
         <div>
             {!loading && filteredProducts.map((products: iProducts, index) => (
@@ -33,6 +33,7 @@ const ProductsCards = () => {
                     <div className="products_cards">
                         {products.products.map((product: iProduct) => (
                             <ProductCardContainer 
+                                idCategory={index}
                                 linkId={product.linkId}
                                 key={product.id}  
                                 name={product.name}

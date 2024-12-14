@@ -7,17 +7,19 @@ interface ProductCardContainerProps {
     price: number;
     type: 'productCard' | 'cartCard';
     linkId: number; 
+    idCategory: number;
     count?: number;
 }
 
-const ProductCardContainer: React.FC<ProductCardContainerProps> = ({ name, img, price, type, linkId, count }) => {
+const ProductCardContainer: React.FC<ProductCardContainerProps> = ({ name, img, price, type, idCategory, linkId, count }) => {
     return type === 'productCard' ? (
         <MyProductCard 
             productCard 
             productPrice={price} 
             productName={name} 
             productImg={img}
-            linkId={linkId} 
+            linkId={linkId}
+            idCategory={idCategory}
         />
     ) : (
         <MyProductCard 
@@ -27,6 +29,7 @@ const ProductCardContainer: React.FC<ProductCardContainerProps> = ({ name, img, 
             productImg={img}
             productCount={count}
             linkId={linkId}
+            idCategory={idCategory}
         />
     );
 };
