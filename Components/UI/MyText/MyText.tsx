@@ -17,7 +17,7 @@ const MyText: FC<MyTextProps> = ({ children, size, color, weight, font, bg, star
   const weightText = weight ? styles[`text_${weight}`] : "";
   const fontText = font ? styles[`text_${font}`] : "Roboto";
   const bgText = bg? styles[`text_${bg}`] : '';
-  const startText = start? styles[`text_${start}`] : 'text_center'
+  const startText = start ? styles[`text_${start}`] : 'text_center'
 
   const textStyles = [sizeText, colorText, weightText, fontText, bgText, startText]
     .join(" ")

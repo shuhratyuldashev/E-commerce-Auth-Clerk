@@ -10,6 +10,7 @@ export async function GET(req: Request) {
                     id: 11,
                     name: 'Кровать 1', 
                     price: 2100000,
+                    description: 'Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eos dolorem  recusandae pariatur consequuntur saepe  eligendi assumenda obcaecati corrupti  dolor debitis? ',
                     img: '/assets/imgs_products/beds/bed_1.jpg',
                     count: 1,
                     linkId: 1
@@ -19,7 +20,7 @@ export async function GET(req: Request) {
                     name: 'Кровать 2',
                     price: 2200000,
                     img: '/assets/imgs_products/beds/bed_2.jpg',
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolorem recusandae pariatur consequuntur saepe eligendi assumenda obcaecati corrupti dolor debitis?',
+                    description: 'Lorem ipsum dolor sit amet  consectetur adipisicing elit. Eos dolorem  recusandae pariatur consequuntur saepe  eligendi assumenda obcaecati corrupti  dolor debitis? ',
                     count: 1,
                     linkId: 2
                    },

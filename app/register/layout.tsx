@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import React, { FC } from "react";
-
+import './register.css'
 export const metadata: Metadata = {
   title: "Sign Up",
 };

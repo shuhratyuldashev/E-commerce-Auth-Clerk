@@ -1,0 +1,44 @@
+.layout_register, .layout_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  *{
+    text-align: center;
+  }
+  .layout_register {
+    background-image: url(/assets/imgs_swiper/swiper_slide_1.png);
+  }
+  .layout_login {
+    background-image: url(/assets/imgs_swiper/swiper_slide_2.png);
+  }
+  .sign_up_form {
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 25px 50px;
+    border-radius: 16px;
+    background-color: white;
+  }
+  .inputs {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .Link_sign_in {
+    margin-top: 15px;
+    gap: 5px;
+    justify-content: center;
+    display: flex;
+  }
