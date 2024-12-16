@@ -7,19 +7,22 @@ import styless from './product.module.css'
 export default async function Page({
   params,
 }: {
-  params: { category: string; id: string };
+  params: Promise<{ category: string; id: string }>;
 }) {
+  const { category, id } = await params; // Распаковка Promise
+
   const fetcher = (args: string) => fetch(args).then((res) => res.json());
   const data = await fetcher("http://localhost:3000/api/products");
 
   let product = null;
-  for (const category of data) {
-    const foundProduct = category.products.find((p: any) => p.linkId === parseInt(params.id));
+  for (const cat of data) {
+    const foundProduct = cat.products.find((p: any) => p.linkId === parseInt(id));
     if (foundProduct) {
-      product = { ...foundProduct, category: category.category };
+      product = { ...foundProduct, category: cat.category };
       break;
     }
   }
+
   if (!product) {
     return <MyText weight="bold" size="gigant" font="Roboto" color="dark">Продукт не найден</MyText>;
   }
