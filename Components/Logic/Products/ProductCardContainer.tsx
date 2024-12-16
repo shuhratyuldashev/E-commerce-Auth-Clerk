@@ -8,7 +8,7 @@ interface ProductCardContainerProps {
     type: 'productCard' | 'cartCard';
     linkId: number; 
     idCategory: number;
-    count?: number;
+    count?: number; 
 }
 
 const ProductCardContainer: React.FC<ProductCardContainerProps> = ({ name, img, price, type, idCategory, linkId, count }) => {
@@ -20,6 +20,7 @@ const ProductCardContainer: React.FC<ProductCardContainerProps> = ({ name, img, 
             productImg={img}
             linkId={linkId}
             idCategory={idCategory}
+            productCount={1} 
         />
     ) : (
         <MyProductCard 
